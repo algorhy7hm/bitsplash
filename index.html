@@ -10,8 +10,21 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css" rel="stylesheet" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
 <pre><code class="language-csharp">
-function helloWorld() {
-    console.log("Hello, World!");
+using System;
+class Program
+{
+    static void Main()
+    {
+ 
+        int[] arrayA = new int[5];
+        int lengthA = arrayA.Length;
+        Console.WriteLine("Length of ArrayA : {0}", +lengthA); 
+        long longLength = arrayA.LongLength;
+        Console.WriteLine("Length of the LongLength Array  : {0}",longLength);
+        int[,] twoD = new int[5, 10];
+        Console.WriteLine("The Size of 2D Array is : {0}",twoD.Length);
+        Console.ReadLine();
+    }
 }
 </code></pre>
 
